@@ -1,3 +1,4 @@
+//Still in progress, not completed yet.
 public class ShannonFano {
     private int[] word;
     private String str;
