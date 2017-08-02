@@ -2,7 +2,7 @@
     Peak and Edge Finder in 1D Array
  */
 package com.company;
-public class Main {
+public class PeakFinder {
     private int array[];
     private int n;
     Main(int a, int n[]){
@@ -25,9 +25,9 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        int[] a = {1,2,8,5,6};
-        Main test = new Main(5,a);
-        test.checkPeak(1,a);
+        int[] a = {1,2,8,5,6}; //test array.
+        PeakFinder test = new PeakFinder(5,a); //Initializing the array
+        test.checkPeak(1,a); //Passing the index and array.
         test.checkEdge(4,a);
     }
 }
