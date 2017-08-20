@@ -4,10 +4,10 @@
  */
 package com.company;
 import java.util.Scanner;
-public class Main {
+public class LinearSearch {
     private static int n[] = {2,3,4,5};
     private int ele;
-    Main(int ele){
+    LinearSearch(int ele){
         this.ele = ele;
     }
     public int searchElement(int[] arr, int ele){
@@ -31,7 +31,7 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        Main test = new Main(5);
+        LinearSearch test = new LinearSearch(5);
         int out = test.printElement();
         System.out.println("The output is: " + out);
     }
