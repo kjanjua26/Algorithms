@@ -36,7 +36,7 @@ int main(int argc, char* argv[]){
     if (file.good()){
         vector<vector <string> > vecline;
         vector <string> sample;
-        CSVRow row; //Calling the CSVRow function.
+        CSVRow row; //Creating CSVRow class object. 
         sample = row.retVec();
         string line;
         vector <string> csv_data;
