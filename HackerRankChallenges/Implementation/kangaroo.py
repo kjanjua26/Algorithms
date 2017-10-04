@@ -1,8 +1,4 @@
-# Statement: https://www.hackerrank.com/challenges/kangaroo
-
-#!/bin/python
 import sys
-
 def kangaroo(x1, v1, x2, v2):
     if(x2>x1 and v2>v1):
         return "NO"
