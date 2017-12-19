@@ -1,12 +1,10 @@
 #include<iostream>
-#include<vector>
 #include<algorithm>
 #include<climits>
 #include <math.h>
 using namespace std;
 
 class heap{
-	vector<int>heapVec; 
 	int *pArr; // pointer to array
 	int capacity;
 	int heapSize;
@@ -33,7 +31,7 @@ heap::heap(int cap){
 void heap::push(int k){
 	if (heapSize == capacity){
 		cout << "Heap Full." << endl;
-		return;
+		exit(0);
 	}
 	heapSize++;
 	int i = heapSize - 1;
