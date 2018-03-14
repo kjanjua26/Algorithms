@@ -1,8 +1,8 @@
 import math # dependencies
 from time import time
 
-doc1 = open('doc1.txt', 'r')
-doc2 = open('doc2.txt', 'r')
+doc1 = open('doc1.txt', 'r') # document 1  
+doc2 = open('doc2.txt', 'r') # document 2
 
 class docDist:
     def __init__(self):
