@@ -36,8 +36,8 @@ class docDist:
 
     def _cosAngle_(self, doc1, doc2):
         prod = self._dotProd_(doc1, doc2)
-        norm = math.sqrt(self._dotProd_(doc1, doc1) * self._dotProd_(doc2, doc2))
-        return math.acos(prod / norm)  # computing the cosine angle.
+        l2_norm = math.sqrt(self._dotProd_(doc1, doc1) * self._dotProd_(doc2, doc2))
+        return math.acos(prod / l2_norm)  # computing the cosine angle.
 
 
 if __name__ == '__main__':
