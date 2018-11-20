@@ -10,6 +10,10 @@ int main(){
 	int parent[2]; // reading and writing for parent. 
 	int child[2]; // reading and writing for child. 
 	char buff[50];
+	if(pipe(parent) == -1 || pipe(child) == -1){
+		perror("Pipe Error.");
+		exit(-1);
+	}
 	pipe(parent); pipe(child);
 	int pid = fork(); // forking process. 
 	if(pid == -1){
